@@ -1,0 +1,25 @@
+doctype html
+html lang="ja"
+  head
+    meta charset="utf-8"
+    title #{data.page.title}
+    meta name="keywords" content="#{data.page.keyword}"
+    meta name="description" content="#{data.page.description}"
+    meta name="generator" content="Middlemanapp"
+    meta name="google-site-verification" content="4-pxR6oepGf2c11KOlNT4z6bc_1yrlbU6_M0sNmwDtI"
+
+    == partial "layouts/ogp"
+
+    == favicon_tag "images/favicon.ico"
+    == stylesheet_link_tag "style"
+    == javascript_include_tag "jquery-1.9.1.min", "e2esound.jquery"
+    == javascript_include_tag "google-analytics.js"
+  body class="#{page_classes}"
+    #fb-root
+    == javascript_include_tag "fb.js"
+    == partial "layouts/header"
+
+    #contents
+      == yield
+
+    == partial "layouts/footer"
