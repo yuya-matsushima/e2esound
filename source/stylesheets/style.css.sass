@@ -1,0 +1,243 @@
+@charset "utf-8"
+@import "variables"
+@import "compass"
+@import url(http://fonts.googleapis.com/css?family=Karla)
+@include global-reset
+
+html
+  background: url(#{$img}/stucco.png)
+  font-size: 13px
+  font-family: $base_font
+  body
+    width: 900px
+    margin: 0 auto
+    color: $color
+    a
+      &:link
+        color: #198DCD
+        text-decoration: none
+      &:hover
+        text-decoration: underline
+      &:visited
+        @extend :link
+    p
+      margin-bottom: 1em
+      line-height: 1.25
+    ul
+      list-style: disc outside
+    li
+      padding-bottom: 3px
+    dl
+      dd
+        margin-left: 1em
+h1, h2, h3, h4, h5, h6
+  font-weight: bold
+h1, h2, h3
+  margin: 1em 0
+h2
+  line-height: 1.37
+
+
+#header
+  @include clearfix
+  position: fixed
+  z-index: 1000
+  width: 900px
+  margin: 0 auto
+  background: url(#{$img}/stucco.png)
+  border-bottom: 1px solid $color
+
+#navi
+  @include clearfix
+  padding: 0
+  margin: 30px 0 -2px 385px
+  list-style: none
+  li
+    float: left
+    padding-right: 10px
+    font-family: $web_font
+    font-size: 20px
+    line-height: 1.16
+    a
+      color: $color
+      text-decoration: none
+      &:visited
+        color: $color
+      &:hover
+        color: #198dcd
+
+#footer
+  border-top: 1px solid $color
+  padding: 10px 0 20px
+  margin-bottom: 160px
+
+#copyright
+  display: block
+  font-family: $base_font
+  font-size: 14px
+  text-align: center
+  margin-bottom: 30px
+
+#contents
+  width: 870px
+  padding: 15px
+
+.index
+  h2
+    font-family: $web_font
+    font-size: 32px
+    font-weight: normal
+    line-height: 1.17
+    margin: 1em 0 0.75em
+    &:before
+      float: left
+      width: 28px
+      height: 33px
+      margin-right: 5px
+      content: ""
+      background: url(#{$img}/contents_icon.png)
+    span
+      font-family: $base_font
+      font-size: 14px
+      padding-left: 1.3em
+
+  #notice
+    display: none
+    width: 563px
+    padding: 5px
+    border: 1px solid red
+    margin: 62px auto 0
+    p
+      margin: 0
+    div
+      width: 100%
+      text-align: right
+
+#top
+  text-align: center
+  margin-bottom: 55px
+  h1
+    margin: 0
+    padding: 0
+    img
+      padding-top: 130px
+  .description
+    font-size: 18px
+    line-height: 1.32
+    padding: 20px
+
+#available
+  @include clearfix
+  margin-bottom: 50px
+  h2:before
+    background-position: 0 0
+  div
+    float: left
+    width: 258px
+    height: 200px
+    padding: 15px
+    border: 1px solid #fbfbfb
+    &.box
+      border-color: #aaa
+    &.right
+      width: 257px
+  h3
+    border-left: 5px solid $color
+    padding: 5px 0 2px 0.5em
+    margin-bottom: 18px
+    font-size: 108%
+  p
+    line-height: 1.48
+
+#profile
+  @include clearfix
+  h2:before
+    background-position: -96px 0
+  img
+    display: block
+    float: left
+    width: 270px
+    padding: 9px
+    background: #f7f7f8
+    border: 1px solid #ccc
+    @include border-radius
+    @include single-box-shadow(#ddd)
+  div
+    float: right
+    width: 540px
+    margin-left: 10px
+    *margin-left: 5px
+    margin-right: 15px
+    span
+      font-size: 16px
+    h3
+      font-size: 24px
+      font-weight: normal
+      margin: 13px
+    dl
+      margin-top: 2.5em
+      margin-left: 0
+      dt
+        font-size: 16px
+        margin-bottom: 0.7em
+        &:before
+          content: '- '
+      dd
+        margin-bottom: 1.8em
+    ul
+      margin: 0.5em 0.7em
+      li
+        line-height: 1.33
+
+#contact
+  h2:before
+    background-position: -48px 0
+  .mail, .phone
+    font-size: 30px
+  dl
+    float: right
+    width: 365px
+    margin: 10px 45px 10px 10px
+    *margin: 10px 22px 10px 5px
+    dd ul
+      margin: 12px 5px
+      li
+        line-height: 1.4
+        padding-bottom: 0.6em
+  @include clearfix
+#inquiry
+  float: left
+  width: 440px
+  margin-right: 10px
+  h3
+    font-size: 16px
+
+#office
+  margin-bottom: 30px
+  @include clearfix
+  h2
+    line-height: 1.37
+    &:before
+      background-position: -144px
+  .map
+    float: left
+    width: 425px
+  .address
+    float: right
+    width: 380px
+    margin-right: 40px
+    dl
+      margin-bottom: 20px
+      dt
+        font-weight: bold
+        padding-bottom: 1em
+      dd
+        margin-left: 0
+
+// for google map code
+#map
+  width: 425px
+  height: 350px
+  margin: 0
+  border: none
+  overflow: hidden

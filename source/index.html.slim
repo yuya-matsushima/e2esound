@@ -1,0 +1,148 @@
+---
+title       : e2esound.com | 群馬県吾妻郡東吾妻町のWebサイト, Webサービスの企画開発
+keyword     : ホームページ,Webサイト,ウェブサイト,製作,作成,制作,東吾妻町,吾妻
+description : 群馬県吾妻郡東吾妻町でWebサイト(ホームページ)の製作,Webサービスの企画,開発,運営を行っています。
+---
+.index
+  #top
+    h1
+      == image_tag "logo.gif", :alt => "イーツーイーサウンドドットコム"
+    p.description
+      | 群馬県吾妻郡東吾妻町にあるwebサイトの製作,
+      br
+      | Webサービス/システムの企画・開発・運営を行う個人事務所です。
+
+  #available
+    h2
+      | Available
+      span -できること-
+    .box
+      h3 Webサイトの製作, 開発
+      p
+        | ご依頼内容に応じてHTML/CSS, 更新情報などを掲載する動的サイト, 各種ソーシャルサービスとの
+          連携等柔軟に対応できます。ご予算に応じて, 各種プログラム開発も含め対応いたします。
+          低予算からスタートし, 機能を増やしていくスモールスタートの開発も可能です。
+
+    div
+      h3 既存Webサイトのカスタマイズ
+      p
+        | 既存サイトへの機能追加もお任せください。<br>｢オリジナルのお問い合わせフォームが欲しい｣,
+          ｢更新情報を表示できるようにしたい｣, ｢あのWebサイトでやっていることを当社でもやりたい｣
+          といったご要望にお答えいたします。
+
+    .box
+      h3 ブログシステムの導入, カスタマイズ
+      p
+        | ブログシステムの導入に対応いたします。<br>企業サイトとの連携やデザインの統一,
+          ソーシャル系サービスとの連携機能まで対応できます。業種, 方向性, 基本的な更新内容に
+          応じて, 機能のカスタマイズも可能です。
+
+    div
+      h3 Webシステム/サービスの開発
+      p
+        | ｢提携の業務を簡単にしたい｣, ｢アイデアがあるので, どうにか実現させたい｣といった
+          ご要望にもお応えいたします。技術調査から実装, テスト, 運用までご相談ください。
+
+    .box
+      h3 受託開発のご依頼
+      p
+        | 開発会社様, 製作会社様からのご依頼もお受けしています。関東または群馬近県であれば
+          月に1-2度の打合せにも対応できます。基本的には, 電話,Eメール,Skype, VCS, redmine等の
+          ツールを利用させて頂く形になります。
+    div
+      h3 その他 - 周辺地域の皆様へ -
+      p
+        | 土地柄として,  非常にIT人材が乏しい地域となっています。何かお困りのことがあれば
+          お気軽にお問い合わせください。Webサービスの使い方からIT利用のご相談,  Webサイトの
+          具体的な更新方法などなどお答えいたします。
+
+  #profile
+    h2
+      | Profile
+      span -プロフィール-
+
+    == image_tag "yterajima.jpg", :alt => "寺嶋祐也プロフィール画像"
+    div
+      span 代表 / プログラマ
+      h3
+        | 寺嶋 祐也
+        span
+          | / Yuya Terajima
+
+      dl
+        dt 経歴
+        dd
+          ul
+            li 大学卒業後, 携帯電話向けコンテンツプロバイダにて音楽配信事業に従事。
+            li 転職し, 上場企業にて法務事業に従事。著作権関連の契約を中心に, コンプライアンス対応や企業法務等を担当。
+            li 2008年春に退職し東京にて独立。PHPをメインに社内システム, ECシステム, Webサイトの製作, 受託開発等を多数担当。
+            li 2011年9月末, 地元である群馬県吾妻郡東吾妻町に移転。
+            li 現在, 群馬に居ながら関東圏のお仕事をリモート対応。
+        dt 使用プログラミング言語等
+        dd PHP, Ruby, JavaScript, (X)HTML/CSS, VBA 他
+        dt Social
+        dd
+          ul
+            li
+              | Twitter :
+              == link_to "@yterajima", "http://twitter.com/yterajima", :target => "_blank"
+            li
+              | Facebook :
+              == link_to "Yuya Terajima", "https://www.facebook.com/yuya.terajima", :target => "_blank"
+            li
+              | Github :
+              == link_to "yterajima(Yuya Terajima)", "https://github.com/yterajima", :target => "_blank"
+
+        dt OSS 関連
+        dd
+          ul
+            li 国産CMS「seezoo」コミッタ
+            li PHPフレームワーク「CodeIgniter」 Contributor
+            li Static Site Generator "Middleman" ドキュメント日本語化
+            li テンプレートエンジン "Slim" README 日本語化
+            li 勉強会: agatsuma.survive 主催
+
+
+  #office
+    h2
+      | Office
+      span -事務所-
+    .map
+      erb:
+        <iframe id="map" src="https://maps.google.co.jp/maps?q=%E7%BE%A4%E9%A6%AC%E7%9C%8C%E5%90%BE%E5%A6%BB%E9%83%A1%E6%9D%B1%E5%90%BE%E5%A6%BB%E7%94%BA%E5%B0%8F%E6%B3%89285&amp;ie=UTF8&amp;hq=&amp;hnear=%E7%BE%A4%E9%A6%AC%E7%9C%8C%E5%90%BE%E5%A6%BB%E9%83%A1%E6%9D%B1%E5%90%BE%E5%A6%BB%E7%94%BA%E5%B0%8F%E6%B3%89%EF%BC%92%EF%BC%98%EF%BC%95&amp;gl=jp&amp;t=m&amp;z=14&amp;brcurrent=3,0x601e70036aeaa61b:0x2cfb5f8db283b23c,0,0x601e7aa571e91e4d:0xc7854d1296b9e89e&amp;ll=36.566735,138.876198&amp;output=embed&amp;iwloc=B"></iframe><br /><small><a href="https://maps.google.co.jp/maps?q=%E7%BE%A4%E9%A6%AC%E7%9C%8C%E5%90%BE%E5%A6%BB%E9%83%A1%E6%9D%B1%E5%90%BE%E5%A6%BB%E7%94%BA%E5%B0%8F%E6%B3%89285&amp;ie=UTF8&amp;hq=&amp;hnear=%E7%BE%A4%E9%A6%AC%E7%9C%8C%E5%90%BE%E5%A6%BB%E9%83%A1%E6%9D%B1%E5%90%BE%E5%A6%BB%E7%94%BA%E5%B0%8F%E6%B3%89%EF%BC%92%EF%BC%98%EF%BC%95&amp;gl=jp&amp;t=m&amp;z=14&amp;brcurrent=3,0x601e70036aeaa61b:0x2cfb5f8db283b23c,0,0x601e7aa571e91e4d:0xc7854d1296b9e89e&amp;ll=36.566735,138.876198&amp;source=embed" style="color:#0000FF;text-align:left">大きな地図で見る</a></small>
+    .address
+      dl
+        dt 住所
+        dd 群馬県吾妻郡東吾妻町大字小泉285 (群馬 SKY HOME内)
+
+      p 関東各地への出張など出かけることが多いので, ご訪問の際には必ずご連絡ください。
+
+
+  #contact
+    h2
+      | Contact
+      span -お問い合わせ-
+
+    #inquiry
+      h3 メールでのお問い合せ
+
+      p.mail
+        == mail_to "info@e2esound.com", "info@e2esound.com", :subject => "お問い合せ"
+
+      h3 お電話でのお問い合せ
+
+      p.phone 0279-26-3801
+
+    dl
+      dt お問い合せに関して
+      dd
+        ul
+          li
+            | 事務所に不在の場合, 電話対応ができませんので可能であればメールでお問い合せください。
+          li
+            | お問い合わせいただいた内容については, 営業秘密として厳重に管理いたします。
+              但し, お問い合わせの内容によっては, 回答を目的として当事務所が提携する第三者に
+              一部情報を提供する場合がございます。
+          li
+            | 連絡先, 氏名等の個人情報についてはお問い合わせに対する返信のみに利用するものとし,
+              当事務所からの宣伝やキャンペーン情報等の販促には使用いたしません。
