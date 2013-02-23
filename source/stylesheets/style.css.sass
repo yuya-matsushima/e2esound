@@ -2,7 +2,7 @@
 @import "variables"
 @import "compass"
 @import url(http://fonts.googleapis.com/css?family=Karla)
-@include global-reset
++global-reset
 
 html
   background: url(#{$img}/stucco.png)
@@ -39,7 +39,7 @@ h2
 
 
 #header
-  @include clearfix
+  +clearfix
   position: fixed
   z-index: 1000
   width: 900px
@@ -48,7 +48,7 @@ h2
   border-bottom: 1px solid $color
 
 #navi
-  @include clearfix
+  +clearfix
   padding: 0
   margin: 30px 0 -2px 385px
   list-style: none
@@ -127,7 +127,7 @@ h2
     padding: 20px
 
 #available
-  @include clearfix
+  +clearfix
   margin-bottom: 50px
   h2:before
     background-position: 0 0
@@ -150,7 +150,7 @@ h2
     line-height: 1.48
 
 #profile
-  @include clearfix
+  +clearfix
   h2:before
     background-position: -96px 0
   img
@@ -160,8 +160,8 @@ h2
     padding: 9px
     background: #f7f7f8
     border: 1px solid #ccc
-    @include border-radius
-    @include single-box-shadow(#ddd)
+    +border-radius
+    +single-box-shadow(#ddd)
   div
     float: right
     width: 540px
@@ -204,7 +204,7 @@ h2
       li
         line-height: 1.4
         padding-bottom: 0.6em
-  @include clearfix
+  +clearfix
 #inquiry
   float: left
   width: 440px
@@ -214,7 +214,7 @@ h2
 
 #office
   margin-bottom: 30px
-  @include clearfix
+  +clearfix
   h2
     line-height: 1.37
     &:before

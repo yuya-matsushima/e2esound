@@ -1,3 +1,13 @@
+# Slim settings
+# Set slim-lang output style
+Slim::Engine.set_default_options :pretty => true
+# Set Shortcut
+Slim::Engine.set_default_options :shortcut => {
+  '#' => {:tag => 'div', :attr => 'id'},
+  '.' => {:tag => 'div', :attr => 'class'},
+  '&' => {:tag => 'input', :attr => 'type'}
+}
+
 ###
 # Compass
 ###
