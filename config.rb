@@ -63,6 +63,8 @@ set :images_dir, 'images'
 
 set :partials_dir, 'partials'
 
+set :bower_dir, '../vendor/bower'
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
