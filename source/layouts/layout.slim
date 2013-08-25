@@ -8,7 +8,7 @@ html lang="ja"
     meta name="generator" content="Middlemanapp"
     meta name="google-site-verification" content="4-pxR6oepGf2c11KOlNT4z6bc_1yrlbU6_M0sNmwDtI"
 
-    == partial "layouts/ogp"
+    == partial "ogp"
 
     == favicon_tag "images/favicon.ico"
     == stylesheet_link_tag "style"
@@ -17,9 +17,9 @@ html lang="ja"
   body class="#{page_classes}"
     #fb-root
     == javascript_include_tag "fb.js"
-    == partial "layouts/header"
+    == partial "header"
 
     #contents
       == yield
 
-    == partial "layouts/footer"
+    == partial "footer"
