@@ -85,5 +85,5 @@ configure :build do
   activate :smusher
 
   # Or use a different image path
-  # set :http_path, "/Content/images/"
+  set :http_prefix, "http://www.e2esound.com/"
 end
