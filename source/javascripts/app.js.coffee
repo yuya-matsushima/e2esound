@@ -1,3 +1,8 @@
+//= require "jquery/jquery"
+
+###
+ * scroll for e2esound.com
+###
 "use strict"
 $(document).ready ->
   headerHeight = $('#header').height()

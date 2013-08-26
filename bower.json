@@ -1,0 +1,11 @@
+{
+  "name": "e2esound",
+  "version": "0.1.0",
+  "homepage": "https://github.com/yterajima/e2esound",
+  "authors": [
+    "yterajima <terra@e2esound.com>"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1"
+  }
+}

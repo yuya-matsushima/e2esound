@@ -14,7 +14,10 @@
 /.sass-cache
 
 # Ignore bundler dir 
-/vendor/bundle 
+/vendor/bundle
+
+# Ignore bower dir
+/vendor/bower
 
 # Ignore Gemfile.lock 
 Gemfile.lock
