@@ -1,5 +1,7 @@
 # e2esound.com static site 
 
+__このリポジトリのデータは現在サイトとして運用されていません。__
+
 [e2esound.com](http://www.e2esound.com/) のサイトデータ。Middleman を使用して制作されています。
 
 ## 編集方法
